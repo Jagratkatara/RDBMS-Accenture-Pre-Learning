@@ -1,0 +1,17 @@
+    1 create table Mobile_Specification(
+    2 Spec_No varchar(10),
+    3 Dimension varchar(20),
+    4 Weight varchar(20),
+    5 Display_Type varchar(20),
+    6 Display_Size varchar(20),
+    7 Internal_mem_in_MB number(10),
+    8 Memory_Card_Capacity_GB number(10),
+    9 Network_3G varchar(5),
+   10 GPRS varchar(5),
+   11 EDGE varchar(5),
+   12 Bluetooth varchar(5),
+   13 Camera varchar(5),
+   14 Camera_Quality varchar(5),
+   15 OS varchar(20),
+   16 Battery_Life_Hrs number(10),
+   17 constraint PK primary key(Spec_No));

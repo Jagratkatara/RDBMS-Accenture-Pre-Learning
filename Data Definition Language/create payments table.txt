@@ -1,0 +1,9 @@
+    1 create table payments(
+    2 Payment_ID varchar2(3),
+    3 Ticket_ID varchar2(3),
+    4 BD_ID number(11),
+    5 DISCOUNT_ID varchar2(3),
+    6 constraint PK_PAYMENTS primary key(Payment_ID),
+    7 constraint FK_PAYMENTS_TICKETS foreign key(Ticket_ID) references TICKETS(Ticket_ID),
+    8 constraint FK_PAYMENTS_BOOKINGDETAILS foreign key(BD_ID) references BOOKINGDETAILS(BD_ID),
+    9 constraint FK_PAYMENTS_DISCOUNTS foreign key(DISCOUNT_ID) references DISCOUNTS(DISCOUNT_ID));

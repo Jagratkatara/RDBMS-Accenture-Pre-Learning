@@ -1,0 +1,7 @@
+    1 create table buses(
+    2 Bus_no number(11),
+    3 Bus_name Varchar2(20),
+    4 Type Varchar2(20),
+    5 Total_seats number(11),
+    6 Avail_seats number(11),
+    7 constraint PK_BUSES primary key(Bus_no));

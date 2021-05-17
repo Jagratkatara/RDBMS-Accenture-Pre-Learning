@@ -1,0 +1,7 @@
+    1 create table Customer_info(
+    2 Customer_ID varchar(10),
+    3 Customer_Name varchar(20),
+    4 Address varchar(100),
+    5 Mobile number(10),
+    6 Email varchar(30),
+    7 constraint PK primary key(Customer_ID));

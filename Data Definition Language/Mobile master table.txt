@@ -1,0 +1,12 @@
+    1 create table Mobile_Master(
+    2 IME_No varchar(10),
+    3 Model_Name varchar(20),
+    4 Manufacturer varchar(20),
+    5 Date_Of_Manufac date,
+    6 Warranty_in_Years number(10),
+    7 Price number(7,2),
+    8 Distributor_ID varchar(10),
+    9 Spec_No varchar(10),
+   10 constraint PK primary key(IME_No),
+   11 constraint FK1 foreign key(Distributor_ID) references Distributor(Distributor_ID),
+   12 constraint FK2 foreign key(Spec_No) references Mobile_Specification(Spec_No));
