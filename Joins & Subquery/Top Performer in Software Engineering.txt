@@ -1,0 +1,7 @@
+    1 select a.student_name, b.department_name, c.value from 
+    2 student a inner join department b on a.department_id=b.department_id
+    3 inner join mark c on c.student_id=a.student_id and (c.subject_id,c.value)
+    4 in (select subject_id, max(a.value) from mark a join subject d using(subject_id)
+    5 where d.subject_name='Software Engineering'
+    6 group by subject_id)
+    7 order by b.department_name;

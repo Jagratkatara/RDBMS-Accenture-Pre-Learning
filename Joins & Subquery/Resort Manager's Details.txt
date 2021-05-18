@@ -1,0 +1,6 @@
+    1 select r.resortID, r.resortName, 
+    2 nvl2(m.name,m.name,'NA') as MANAGERNAME, 
+    3 nvl2(m.phone, m.phone,'NA') as PHONENO
+    4 from Resort r left join Manager m
+    5 on r.managerID=m.managerID
+    6 order by r.resortID ;

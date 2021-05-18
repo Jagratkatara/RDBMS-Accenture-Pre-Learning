@@ -1,0 +1,5 @@
+    1 select c.Customer_ID, c.Customer_Name, c.Mobile, s.Price 
+    2 from Customer_Info c join Sales_Info s 
+    3 on c.Customer_ID=s.Customer_ID 
+    4 where s.Price<30000 
+    5 order by Customer_ID;

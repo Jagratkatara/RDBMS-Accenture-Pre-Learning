@@ -1,0 +1,8 @@
+    1 select department_name 
+    2 from Department d join Student s
+    3 on d.department_id=s.department_id
+    4 having count(*) in (select min(count(student_id))
+    5 from student s join Department d
+    6 on d.department_id=s.department_id group by d.department_id)
+    7 group by d.department_id,department_name
+    8 order by department_name;

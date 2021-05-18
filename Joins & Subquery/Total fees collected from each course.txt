@@ -1,0 +1,7 @@
+    1 select c.courseid, 
+    2 c.CourseName, 
+    3 sum(Fees) as TOTALFEES 
+    4 from COURSE c  join REGISTRATION r
+    5 on c.courseid=r.courseid
+    6 group by c.courseid,c.CourseName
+    7 order by c.courseid;

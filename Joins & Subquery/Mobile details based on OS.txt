@@ -1,0 +1,5 @@
+    1 select m.IME_No, m.Model_Name, m.Manufacturer, m.Price
+    2 from Mobile_Master m inner join Mobile_Specification s
+    3 on m.Spec_No=s.Spec_No
+    4 where s.OS='Android4S'
+    5 order by m.IME_No;

@@ -1,0 +1,5 @@
+    1 select distinct m1.city,m1.name, m1.phone
+    2 from manager m1 join manager m2
+    3 on m2.city=m1.city
+    4 where m1.name!=m2.name
+    5 order by 1,2;

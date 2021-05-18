@@ -1,0 +1,6 @@
+    1 select student_name, 
+    2 max(m.value) as max_mark 
+    3 from  Student s join Mark m
+    4 on s.student_id=m.student_id
+    5 group by student_name
+    6 order by student_name;

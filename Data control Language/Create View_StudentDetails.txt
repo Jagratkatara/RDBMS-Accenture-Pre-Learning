@@ -1,0 +1,3 @@
+    1 create view course_student_details as select a.studid, a.firstname, b.coursename
+    2 from registration c, student a, course b
+    3 where c.studid=a.studid and c.courseid=b.courseid;
