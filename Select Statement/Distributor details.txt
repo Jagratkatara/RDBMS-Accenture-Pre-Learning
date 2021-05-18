@@ -1,0 +1,1 @@
+select Distributor_Name from Distributor where not Distributor_ID in ('SA111','MC111') order by Distributor_Name;

@@ -1,0 +1,1 @@
+select SalesId,IME_No,Price,Customer_ID from Sales_Info order by IME_No;

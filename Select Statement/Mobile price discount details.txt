@@ -1,0 +1,1 @@
+ select IME_No,Model_Name,Warranty_in_Years,Price,Price*.13 as Discount from Mobile_Master where Manufacturer='Samsung';

@@ -1,0 +1,1 @@
+select * from Customer_Info where Address in ('Kolkata','Patna') order by Customer_Name desc;
